@@ -1,14 +1,12 @@
 # Abstract
 
-**Nakheel Guard: what acoustic borer detection achieves when evaluated honestly**
+
 
 Ali Faisal Sadeq Ahmed · Ismail Mudhaffar
 King Fahd University of Petroleum and Minerals
 SAIF 2026 — Team SAIF130280
 
-> **Note on the submitted abstract.** The abstract filed with the SAIF platform in September 2026 describes the system this project set out to build: a low-cost IoT sensor that detects red palm weevil feeding and alerts farmers. The analysis changed what the project is. The text below reflects what was actually measured, and matches the scientific poster uploaded on 5 November 2026.
 
----
 
 Red palm weevil destroys date palms from the inside, and by the time crown collapse is visible the tree is usually beyond saving. Acoustic sensors that listen for larval feeding are the leading early-detection approach, and published studies report accuracies approaching 100%. This project tested whether those numbers describe performance on a tree the system has never heard before.
 
