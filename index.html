@@ -309,6 +309,43 @@ ul.plain li::marker { color: var(--accent); }
 .refs { font-size: .88rem; line-height: 1.55; display: grid; gap: .85rem; color: var(--ink-soft); }
 .refs i { color: var(--ink); font-style: italic; }
 
+/* ------------------------------------------------------------- materials */
+.materials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 1.4rem;
+}
+.materials a {
+  background: var(--raised);
+  padding: 1.15rem 1.2rem;
+  min-width: 0;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: background .15s ease;
+}
+.materials a:hover, .materials a:focus-visible { background: color-mix(in srgb, var(--accent) 9%, var(--raised)); }
+.materials .k {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+}
+.materials .t {
+  display: block;
+  margin-top: .35rem;
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+.materials .d { display: block; margin-top: .3rem; font-size: .85rem; color: var(--ink-soft); line-height: 1.45; }
+
 footer {
   border-top: 1px solid var(--rule);
   padding-block: 2.2rem 3.5rem;
@@ -338,9 +375,9 @@ footer {
     <h1>Nakheel&nbsp;Guard: <em>0.89 or 0.48?</em></h1>
     <p class="standfirst">Acoustic sensors are the leading way to catch wood-boring larvae inside a tree before the damage shows. Published studies report accuracies near 100%. This project tested whether those numbers survive an honest split of the data.</p>
     <p class="byline">
-      <span><b>Ali Faisal Sadeq Ahmed</b></span>
+      <span><b>Ali Faisal Sadeq Ahmed</b> &middot; <b>Ismail Mudhaffar</b></span>
       <span>King Fahd University of Petroleum and Minerals</span>
-      <span>ID g202415180</span>
+      <span>Team SAIF130280</span>
     </p>
   </div>
 </header>
@@ -498,9 +535,34 @@ footer {
   </div>
 </section>
 
+<section>
+  <p class="eyebrow">Materials</p>
+  <h2>Everything behind these numbers</h2>
+  <div class="col">
+    <p>Every figure and every number on this page came out of notebooks run on a public dataset. All of it is open for inspection, which is the point: a result about how a field measures itself is worth nothing if you cannot check it.</p>
+  </div>
+  <div class="materials">
+    <a href="https://github.com/alifaisal-sadeq/nakheel-guard">
+      <span class="k">Repository</span>
+      <span class="t">Code and notebooks</span>
+      <span class="d">Feature extraction, both evaluation protocols, the tree-identity probe, the sequential detector and every figure on this page.</span>
+    </a>
+    <a href="https://github.com/alifaisal-sadeq/nakheel-guard/blob/main/ABSTRACT.md">
+      <span class="k">Abstract</span>
+      <span class="t">Full abstract and limitations</span>
+      <span class="d">What was measured, stated at length, with every limitation named rather than summarised.</span>
+    </a>
+    <a href="https://www.kaggle.com/datasets/potamitis/treevibes">
+      <span class="k">Dataset</span>
+      <span class="t">TreeVibes on Kaggle</span>
+      <span class="d">Rigakis et al. (2021), published openly under CC BY. Download it and reproduce the split yourself.</span>
+    </a>
+  </div>
+</section>
+
 <footer>
   <div class="col">
-    <p>Every figure and every number on this page was produced by notebooks run on the public TreeVibes dataset, which is published openly by Rigakis et al. under CC BY. The analysis is reproducible from the dataset and the code.</p>
+    <p>The analysis is reproducible from the dataset and the code above.</p>
     <p style="margin-bottom:.35rem">Contact</p>
     <p class="contact">g202415180@kfupm.edu.sa</p>
   </div>
