@@ -28,16 +28,3 @@ No tree in the dataset is recorded in both states, so tree identity and class ar
 
 ---
 
-## Short version
-
-For forms with a character limit (approximately 1,200 characters):
-
-> **Nakheel Guard: what acoustic borer detection achieves when evaluated honestly**
->
-> Acoustic sensors that listen for larval feeding are the leading approach to detecting wood-boring pests before damage is visible, and published studies report accuracies near 100%. We tested whether those numbers describe performance on a tree the system has never heard before.
->
-> Using TreeVibes (Rigakis et al., 2021) — field recordings from 38 instrumented trees across 142 days — we extracted 261 acoustic features across 38,675 windows from 36 trees, then compared two evaluation protocols on identical features and models. Splitting recordings at random, the standard practice, gave 0.890 balanced accuracy. Splitting by tree, so none appears in both training and test, gave 0.485 against a chance level of 0.500.
->
-> The gap of 0.405 reproduces across three model families, and a spectrogram CNN shows the widest gap of all at 0.434 — greater capacity makes it worse. The cause is measurable: a classifier predicts which of the 36 trees a recording came from at 0.868 against 0.028 chance. The models learn tree identity, not infestation.
->
-> We propose per-tree sequential monitoring instead: each device models its own tree's baseline and accumulates evidence over time, which at a matched false-alarm budget detects more infestations and detects them sooner.
